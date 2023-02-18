@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="2"
+    android:rowCount="5">
+
+    ?
+    <EditText
+        android:id="@+id/edt_ten"
+        android:hint="Họ tên"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:layout_width="20dp"
+        android:layout_columnSpan="2"
+        />
+
+    <EditText
+        android:id="@+id/edt_sdt"
+        android:hint="Số điện thoại"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:inputType="phone"
+        android:textSize="25sp"
+        android:layout_columnSpan="2"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_rowWeight="1"
+        android:text="Giới tính"
+        android:textSize="25sp"
+        />
+    <Switch
+        android:id="@+id/sw_gt"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_rowWeight="1"
+        android:text="Trình độ"
+        android:textSize="25sp"
+        />
+    <Spinner
+        android:id="@+id/sp_trinhdo"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        />
+    <TextView
+        android:id="@+id/tv_tuoi"
+        android:layout_gravity="center"
+        android:layout_rowWeight="1"
+        android:text="Tuổi"
+        android:textSize="25sp"
+        />
+    <SeekBar
+        android:id="@+id/sb_tuoi"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:max="100"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_rowWeight="1"
+        android:text="Thể thao"
+        android:textSize="25sp"
+        />
+    <CheckBox
+        android:id="@+id/cb_thethao"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_rowWeight="1"
+        android:text="Âm nhạc"
+        android:textSize="25sp"
+        />
+    <RadioGroup
+        android:id="@+id/rg_amnhac"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        >
+        <RadioButton
+            android:id="@+id/rb_rock"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rock" />
+        <RadioButton
+            android:id="@+id/rb_rap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rap" />
+        <RadioButton
+            android:id="@+id/rb_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pop" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_gravity="center"
+        android:layout_rowWeight="0"
+        android:text="Register"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:text="cancel"
+        android:textSize="20sp"
+        />
+
+</GridLayout>
